@@ -199,7 +199,6 @@ $border-radius: 10px;
   // banner image
 .banner-container {
   width: 100%;
-  height: 100vh;
   background-size: cover;
   cursor: pointer;
   img {
@@ -213,8 +212,7 @@ $border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: 17rem;
+  margin-top: 20px;
   .category{
     @include grid(16rem);
     background-color: $white;
@@ -253,9 +251,8 @@ $border-radius: 10px;
   .notebook-container {
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
-    bottom: 14rem;
     width: 100%;
+    margin-top: 40px;
 
     h2 {
       font-weight: 700;
@@ -318,11 +315,10 @@ $border-radius: 10px;
   // penawaran product 
   .smb-container {
     text-align: center;
-    position: relative;
-    bottom: 12.5rem;
     width: 100%;
     box-sizing: border-box;
     text-transform: uppercase;
+    margin-top: 30px;
     h2 {
       font-weight: 700;
       font-size: 14px;
@@ -333,10 +329,11 @@ $border-radius: 10px;
       left: 120px;
     }
 
-    .small-banners {
+    .banners {
     display: flex;
     justify-content: center;
-    margin-left: 70px;
+    align-items: center;
+    margin-left: 50px;
     text-align: center;
     
       .small-banners {
@@ -357,9 +354,8 @@ $border-radius: 10px;
   .ssd-container {
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
-    bottom: 10.5rem;
     width: 100%;
+    margin-top: 30px;
 
     h2 {
       font-weight: 700;
@@ -422,9 +418,9 @@ $border-radius: 10px;
   .banner-footer {
     width: 100%;
     background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
-    position: relative;
-    bottom: 100px;
     img {
       max-width: 100%;
     }
@@ -443,7 +439,7 @@ $border-radius: 10px;
     }
   }
   
-  
+
   .footer{
     background-color: #fff;
     padding: 70px 0;
@@ -533,10 +529,7 @@ $border-radius: 10px;
   .smb-container {
     text-align: center;
     width: 100%;
-    position: relative;
-    bottom: 32rem;
-    right: 70px;
-    .small-banners{
+    .banners{
       display: flex;
       flex-direction: column-reverse;
       img {
@@ -552,11 +545,10 @@ $border-radius: 10px;
   // ssd
   .ssd-container {
     align-items: center;
-    position: relative;
-    bottom: 33rem;
     display: grid;
     gap: 2rem;
-
+    padding-bottom: 70px;
+    
     h2 {
       display: none;
     }
@@ -605,7 +597,6 @@ $border-radius: 10px;
   // banner footer
   .banner-footer {
     width: 100%;
-    position: relative;
   }
 
   footer {
@@ -615,10 +606,10 @@ $border-radius: 10px;
   // notebook
   .notebook-container {
     align-items: center;
-    position: relative;
-    bottom: 34rem;
     display: grid;
     gap: 2rem;
+    position: relative;
+    bottom: 20px;
 
     h2 {
       display: none;
@@ -647,10 +638,21 @@ $border-radius: 10px;
     }
   }  
 
+  // footer
+  .footer {
+    .container {
+      .row {
+        .info {
+          display: none;
+        }
+      }
+    }
+  }
+
   // navbar dan toggle
     .menu-toggle {
       display: flex;
-      position: relative;
+      padding-right: 6px;
     }
     .logo{
       display: none;
@@ -698,12 +700,13 @@ $border-radius: 10px;
       justify-content: center;
       align-items: center;
       position: relative;
-      bottom: 36.3rem;
+      bottom: 20px;
+
       .category{
         @include grid(16rem);
         background-color: $white;
         border-radius: $border-radius;
-        padding: 20px 20px 20px 20px;
+        padding: 5px 5px 5px 5px;
         gap:0.7rem;
     
         .list-category{
